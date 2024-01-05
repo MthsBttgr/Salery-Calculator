@@ -133,8 +133,21 @@ fn main() {
                 Some(s) => Some(parse_naivedatetime_from_str(s).unwrap()),
                 None => None,
             };
-            db.edit_shift(*id, start, end).unwrap();
-            println!("edit succesfull");
+            db.edit_shift(*id, &start, &end).unwrap();
+
+            println!(
+                "Edit succesfull! \n\nChanges:{}{}",
+                if let Some(start) = start {
+                    format!("\nshift_start = {}", start)
+                } else {
+                    "".to_string()
+                },
+                if let Some(end) = end {
+                    format!("\nshift_end = {}", end)
+                } else {
+                    "".to_string()
+                },
+            );
         }
     }
 }

@@ -39,8 +39,8 @@ impl Database {
     pub fn edit_shift(
         &self,
         shift_id: u32,
-        start: Option<NaiveDateTime>,
-        end: Option<NaiveDateTime>,
+        start: &Option<NaiveDateTime>,
+        end: &Option<NaiveDateTime>,
     ) -> Result<(), Error> {
         if let (Some(s), Some(e)) = (&start, &end) {
             if s > e {
