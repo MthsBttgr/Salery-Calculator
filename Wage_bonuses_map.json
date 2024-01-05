@@ -1,0 +1,37 @@
+{
+  "base_rate": 136.74,
+  "period": {
+    "start_day": 21,
+    "end_day": 20
+  },
+  "general_time_periods": [
+    {
+      "bonus_pr_hour": 20.77,
+      "start": "18:00",
+      "end": "23:59"
+    },
+    {
+      "bonus_pr_hour": 28.38,
+      "start": "00:00",
+      "end": "06:00"
+    }
+  ],
+  "day_of_week_rates": [
+    {
+      "bonus_pr_hour": 20.77,
+      "start": "14:00",
+      "end": "23:59",
+      "days": [
+        "saturday"
+      ]
+    },
+    {
+      "bonus_pr_hour": 28.38,
+      "start": "06:00",
+      "end": "23:59",
+      "days": [
+        "sunday"
+      ]
+    }
+  ]
+}
