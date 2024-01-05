@@ -9,8 +9,11 @@ There are six commands:
 - edit-shift - edit a shift
 - drop-database - deletes the database and all shifts
 
+Of course there is also --help or -h that give a better description of what the six commands do.
+
 Most commands have flags and arguments that can be used to specify behavior.
 Eg. "list" can list all shifts or just the shifts in this month.
+-h can also be used to get a description of these.
 
 The project is structured in a fairly simple way: main() determines what command is given and calls the corresponding functions located in other files, to keep things somewhat tidy.
 This project is a mess, but it works. If anybody else wants to use it, feel free to.
